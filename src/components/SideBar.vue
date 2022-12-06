@@ -318,6 +318,6 @@ export default {
 }
 .v-sidebar-menu .vsm--link_active {
   background-color: #e3eef5;
-  font-weight: normal;
+  font-weight: bold;
 }
 </style>
