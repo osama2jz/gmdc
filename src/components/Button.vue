@@ -1,7 +1,7 @@
 <template>
   <button
     v-if="icon"
-    class="btn float-right"
+    class="btn float-right text-black"
     :style="styles"
     style="
       min-width: 150px;
@@ -16,10 +16,10 @@
 
   <button
     v-else
-    class="btn float-right"
+    class="btn float-right text-black"
     :style="styles"
     style="
-      min-width: 150px;
+      min-width: 50px;
       font-weight: 100;
       font-size: small;
       text-transform: capitalize;
@@ -42,7 +42,7 @@ export default {
   computed: {
     styles() {
       if (this.primary) {
-        return { "background-color": "#1f91d0" };
+        return { "background-color": "#FFE15D" };
       }
       return {
         "background-color": "white",
