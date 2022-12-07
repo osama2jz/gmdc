@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
 // import Form from "../components/Form.vue";
-import DataTable from "../views/DataTable.vue";
+import Landing from "../views/Landing.vue";
+import Inventory from "../views/Inventory.vue";
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: DataTable,
+    name: "landing",
+    component: Landing,
+  },
+  {
+    path: "/inventory",
+    name: "inventory",
+    component: Inventory,
   },
 ];
 

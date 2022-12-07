@@ -1,15 +1,18 @@
 <template>
+  <h4>{{ title }}</h4>
   <div class="dropdown">
     <label
       tabindex="0"
       style="
-        /* width: 100px; */
         display: flex;
-        font-size: 12px;
+        font-size: 14px;
+        color: gray;
         border-radius: 3px;
-        background-color: #e8e8e8;
-        padding: 4px;
+        width: 270px;
+        border: 1px solid #e8e8e8;
+        padding: 10px;
         text-align: center;
+        justify-content: space-between;
       "
     >
       <img v-if="icon1" :src="require(`@/assets/${icon1}.svg`)" class="mr-1" />

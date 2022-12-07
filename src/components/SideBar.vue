@@ -1,33 +1,41 @@
 <template>
   <div class="d-flex flex-column">
     <div
-      class="d-flex align-items-center font-bold"
+      class="d-flex align-items-center font-bold pl-5"
       style="height: 60px; background-color: white"
     >
       <a href="/" class="flex items-center space-x-2 py-4 px-2"
-        ><img src="../assets/logo.svg" style="height: 50px !important" />
+        ><img src="../assets/logo.svg" style="height: 60px !important" />
       </a>
-      <nav class="d-flex gap-3 align-items-center" style="height: 100%">
+      <nav
+        class="d-flex gap-4 align-items-center"
+        style="height: 100%; margin-left: 5%"
+      >
         <router-link to="/">
           <a class="item">
-            <span>Search Cars</span>
+            <span>Home</span>
           </a>
         </router-link>
-        <router-link to="/">
-          <a class="item">
-            <span>Sell/Trade</span>
-          </a>
-        </router-link>
-        <router-link to="/">
-          <a class="item">
-            <span>Financing</span>
-          </a>
-        </router-link>
-        <router-link to="/">
+        <router-link to="/inventory">
           <a class="item">
             <span>Car Finder</span>
           </a>
         </router-link>
+        <router-link to="/">
+          <a class="item">
+            <span>Apply Online</span>
+          </a>
+        </router-link>
+        <router-link to="/">
+          <a class="item">
+            <span>Contact Us</span>
+          </a>
+        </router-link>
+        <!-- <router-link to="/">
+          <a class="item">
+            <span>Car Finder</span>
+          </a>
+        </router-link> -->
       </nav>
     </div>
     <div>
@@ -49,6 +57,8 @@ export default {
   height: 100%;
 }
 .item:hover {
-  background-color: #ffe15d;
+  background-color: rgb(0, 97, 158);
+  color: white;
+  border-radius: 5px;
 }
 </style>

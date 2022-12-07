@@ -1,16 +1,16 @@
 <template>
-  <div class="w-full md:w-1/2 px-3">
-    <label
-      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+  <div class="w-full md:w-1/2 pr-1">
+    <!-- <label
+      class="block uppercase text-gray-700 text-xs font-bold mb-2"
       for="grid-last-name"
     >
       {{ title }}
-    </label>
+    </label> -->
     <input
-      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       id="grid-last-name"
       type="{{type}}"
-      :placeholder="'Enter ' + title"
+      :placeholder="title"
     />
   </div>
 </template>

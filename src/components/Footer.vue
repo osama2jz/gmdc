@@ -43,7 +43,7 @@
           <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4 col-5">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4 d-flex">
-              <img src="../assets/logo.png" style="width: 50px" />GDLC
+              <img src="../assets/logo.svg" style="width: 50px" />
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content.
@@ -59,30 +59,35 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
             <p>
-              <a href="#!" class="text-reset">Search Cars</a>
+              <a @click="$router.push('inventory')" class="text-reset"
+                >Car Finder</a
+              >
             </p>
             <p>
-              <a href="#!" class="text-reset">Sell/Trade</a>
+              <a to="/" class="text-reset">Apply Online</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Financing</a>
+              <a href="#!" class="text-reset">Contact Us</a>
             </p>
-            <p>
+            <!-- <p>
               <a href="#!" class="text-reset">Car Finder</a>
-            </p>
+            </p> -->
           </MDBCol>
           <!-- Grid column -->
           <!-- Grid column -->
           <MDBCol md="4" lg="3" xl="3" class="mx-auto mb-md-0 mb-4 col">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-home me-3"></i> 2747 Annapolis Rd , Hanover , MD
+              21076
+            </p>
             <p>
               <i class="fas fa-envelope me-3"></i>
-              info@example.com
+              carzlane@mail.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-phone me-3"></i> + (240) 307-3416</p>
+            <!-- <p><i class="fas fa-phone me-3"></i> + (240) 307-3416</p> -->
           </MDBCol>
           <!-- Grid column -->
         </MDBRow>

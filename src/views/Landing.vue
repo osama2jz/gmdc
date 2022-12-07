@@ -10,7 +10,8 @@
           opacity: 0.4;
         "
       ></div>
-      <h1>FIND YOUR SOUL RIDE</h1>
+
+      <h1 class="text-center mt-0">FIND YOUR SOUL RIDE</h1>
       <div class="search">
         <img src="../assets/search.svg" style="width: 25px" />
         <input
@@ -18,17 +19,45 @@
           placeholder="Search Make, Model or keyword"
           class="input input-ghost w-full max-w-50"
         />
-        <Button :title="'GO'" :primary="true" />
+        <Button
+          @click="$router.push('inventory')"
+          :title="'GO'"
+          :primary="true"
+        />
       </div>
       <div class="cars">
-        <MiniCard :title="'Trucks'" :icon="'trucks'" />
-        <MiniCard :title="'Hatchbacks'" :icon="'hatchbacks'" />
-        <MiniCard :title="'Sedans'" :icon="'sedan'" />
+        <MiniCard
+          @click="$router.push('inventory')"
+          :title="'Trucks'"
+          :icon="'trucks'"
+        />
+        <MiniCard
+          @click="$router.push('inventory')"
+          :title="'Hatchbacks'"
+          :icon="'hatchbacks'"
+        />
+        <MiniCard
+          @click="$router.push('inventory')"
+          :title="'Sedans'"
+          :icon="'sedan'"
+        />
       </div>
       <div class="cars">
-        <MiniCard :title="'Coupes'" :icon="'coupe'" />
-        <MiniCard :title="'Electrics'" :icon="'ev'" />
-        <MiniCard :title="'SUVs'" :icon="'suv'" />
+        <MiniCard
+          @click="$router.push('inventory')"
+          :title="'Coupes'"
+          :icon="'coupe'"
+        />
+        <MiniCard
+          @click="$router.push('inventory')"
+          :title="'Electrics'"
+          :icon="'ev'"
+        />
+        <MiniCard
+          @click="$router.push('invecntory')"
+          :title="'SUVs'"
+          :icon="'suv'"
+        />
       </div>
     </div>
     <div class="d-flex justify-content-center pt-5 pb-5">
@@ -59,28 +88,28 @@
     <div class="d-flex justify-content-center pt-5 pb-5 gap-4">
       <div
         class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
-        style="background-color: rgb(255, 225, 93, 0.2)"
+        style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l3.svg" />
         <h3>Cars Under $20,000</h3>
       </div>
       <div
         class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
-        style="background-color: rgb(255, 225, 93, 0.2)"
+        style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l4.svg" />
         <h3>Shop Great Deals</h3>
       </div>
       <div
         class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
-        style="background-color: rgb(255, 225, 93, 0.2)"
+        style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l5.svg" style="width: 40px" />
         <h3>Delivery by Saturday</h3>
       </div>
       <div
         class="d-flex flex-column align-items-center rounded px-5 py-4"
-        style="background-color: rgb(255, 225, 93, 0.2)"
+        style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l6.svg" />
         <h3>Shop Fuel Efficient</h3>
@@ -88,7 +117,7 @@
     </div>
     <div
       class="row d-flex justify-content-center gap-x-5 gap-y-2 m-auto py-4"
-      style="background-color: rgb(255, 225, 93, 0.2)"
+      style="background-color: rgb(0, 97, 158, 0.2)"
     >
       <h2 class="col text-center">Shop Great Values</h2>
       <div class="w-100"></div>
@@ -103,11 +132,13 @@
       <div class="w-100"></div>
       <Button
         :title="'View All'"
+        @click="$router.push('inventory')"
         style="
           width: 20%;
           margin-top: 20px;
-          border: 1px solid rgb(255, 225, 93);
-          background-color: rgb(255, 225, 255, 0.1);
+          font-weight: bold;
+          border: 1px solid rgb(0, 0, 0, 0.1);
+          background-color: rgb(255, 255, 255, 0.5);
         "
       />
     </div>
@@ -121,7 +152,7 @@ import MiniCarView from "@/components/miniCarView.vue";
 import DummyVue from "../components/SideBar.vue";
 import Footer from "../components/Footer.vue";
 export default {
-  name: "DataTable",
+  name: "Landing_",
   components: { DummyVue, Button, MiniCard, MiniCarView, Footer },
 };
 </script>
