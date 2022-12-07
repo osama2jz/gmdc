@@ -135,7 +135,7 @@
         <div class="col">
           <InventoryCard
             :title="'Chevrolet Silverado 1500'"
-            :icon="'t1'"
+            :icon="'c3'"
             :trans="'Automatic'"
             :mileage="'19,800 miles'"
             :price="'$25,000'"
@@ -147,7 +147,7 @@
         <div class="col">
           <InventoryCard
             :title="'Chevrolet Silverado 1500'"
-            :icon="'t1'"
+            :icon="'c2'"
             :trans="'Automatic'"
             :mileage="'19,800 miles'"
             :price="'$25,000'"
@@ -160,7 +160,7 @@
         <div class="col">
           <InventoryCard
             :title="'Chevrolet Silverado 1500'"
-            :icon="'t1'"
+            :icon="'c4'"
             :trans="'Automatic'"
             :mileage="'19,800 miles'"
             :price="'$25,000'"
@@ -174,7 +174,7 @@
         <div class="col">
           <InventoryCard
             :title="'Chevrolet Silverado 1500'"
-            :icon="'t1'"
+            :icon="'c5'"
             :trans="'Automatic'"
             :mileage="'19,800 miles'"
             :price="'$25,000'"
@@ -186,7 +186,7 @@
         <div class="col">
           <InventoryCard
             :title="'Chevrolet Silverado 1500'"
-            :icon="'t1'"
+            :icon="'c7'"
             :trans="'Automatic'"
             :mileage="'19,800 miles'"
             :price="'$25,000'"
