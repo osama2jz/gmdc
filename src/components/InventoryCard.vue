@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push('inventory/car')">
     <img
       :src="require(`@/assets/${icon}.webp`)"
       class="mr-2"
@@ -100,6 +100,12 @@ export default {
   width: 350px;
   height: 400px;
   margin-bottom: 30px;
-  border: 1px solid rgba(0, 97, 158, 0.7);
+  transition: scale 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+  cursor: pointer;
+  scale: 1.01;
+  border: 1px solid rgba(0, 75, 148);
 }
 </style>

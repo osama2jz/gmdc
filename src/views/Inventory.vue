@@ -68,11 +68,7 @@
             <span class="label-text">Automatic</span>
           </label>
           <label class="cursor-pointer label">
-            <input
-              type="checkbox"
-              checked="checked"
-              class="checkbox checkbox-sm mr-2"
-            />
+            <input type="checkbox" class="checkbox checkbox-sm mr-2" />
             <span class="label-text">Manual</span>
           </label>
         </div>
@@ -87,19 +83,11 @@
             <span class="label-text">Fuel</span>
           </label>
           <label class="cursor-pointer label">
-            <input
-              type="checkbox"
-              checked="checked"
-              class="checkbox checkbox-sm mr-2"
-            />
+            <input type="checkbox" class="checkbox checkbox-sm mr-2" />
             <span class="label-text">Electric</span>
           </label>
           <label class="cursor-pointer label">
-            <input
-              type="checkbox"
-              checked="checked"
-              class="checkbox checkbox-sm mr-2"
-            />
+            <input type="checkbox" class="checkbox checkbox-sm mr-2" />
             <span class="label-text">Hybrid</span>
           </label>
         </div>
@@ -120,6 +108,7 @@
         <p style="color: gray; font-weight: bold; margin: 10px">Results: 120</p>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'t1'"
             :trans="'Automatic'"
@@ -134,6 +123,7 @@
         </div>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'c3'"
             :trans="'Automatic'"
@@ -146,6 +136,7 @@
         </div>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'c2'"
             :trans="'Automatic'"
@@ -159,6 +150,7 @@
         <div class="w-100"></div>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'c4'"
             :trans="'Automatic'"
@@ -173,6 +165,7 @@
         </div>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'c5'"
             :trans="'Automatic'"
@@ -185,6 +178,7 @@
         </div>
         <div class="col">
           <InventoryCard
+            @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
             :icon="'c7'"
             :trans="'Automatic'"

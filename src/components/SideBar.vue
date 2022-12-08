@@ -21,7 +21,7 @@
             <span>Car Finder</span>
           </a>
         </router-link>
-        <router-link to="/">
+        <router-link to="/apply">
           <a class="item">
             <span>Apply Online</span>
           </a>
