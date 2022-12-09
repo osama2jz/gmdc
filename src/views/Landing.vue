@@ -25,36 +25,42 @@
           :primary="true"
         />
       </div>
-      <div class="cars">
+      <div class="cars row">
         <MiniCard
+          class="col"
           @click="$router.push('inventory')"
           :title="'Trucks'"
           :icon="'trucks'"
         />
         <MiniCard
+          class="col"
           @click="$router.push('inventory')"
           :title="'Hatchbacks'"
           :icon="'hatchbacks'"
         />
         <MiniCard
+          class="col"
           @click="$router.push('inventory')"
           :title="'Sedans'"
           :icon="'sedan'"
         />
       </div>
-      <div class="cars">
+      <div class="cars row">
         <MiniCard
+          class="col"
           @click="$router.push('inventory')"
           :title="'Coupes'"
           :icon="'coupe'"
         />
         <MiniCard
+          class="col"
           @click="$router.push('inventory')"
           :title="'Electrics'"
           :icon="'ev'"
         />
         <MiniCard
-          @click="$router.push('invecntory')"
+          class="col"
+          @click="$router.push('inventory')"
           :title="'SUVs'"
           :icon="'suv'"
         />
@@ -69,7 +75,10 @@
         <div class="d-flex flex-column ml-5 gap-2">
           <h3>Get Pre-Qualified</h3>
           <p>See your actual monthly payment.</p>
-          <Button :title="'GET PRE-QUALIFIED'" />
+          <Button
+            :title="'View More Details'"
+            @click="$router.push('inventory')"
+          />
         </div>
       </div>
       <div
@@ -80,35 +89,38 @@
         <div class="d-flex flex-column ml-5 gap-2">
           <h3>Sell/Trade Your Car</h3>
           <p>Get an offer in just 2 minutes.</p>
-          <Button :title="'GET AN OFFER'" />
+          <Button
+            :title="'Read More Here'"
+            @click="$router.push('inventory')"
+          />
         </div>
       </div>
     </div>
     <h2 class="text-center">Affordable Cars Available Now</h2>
     <div class="d-flex justify-content-center pt-5 pb-5 gap-4">
       <div
-        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
+        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4 shadow"
         style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l3.svg" />
         <h3>Cars Under $20,000</h3>
       </div>
       <div
-        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
+        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4 shadow"
         style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l4.svg" />
         <h3>Shop Great Deals</h3>
       </div>
       <div
-        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4"
+        class="d-flex flex-column align-items-center justify-content-between rounded px-5 py-4 shadow"
         style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l5.svg" style="width: 40px" />
         <h3>Delivery by Saturday</h3>
       </div>
       <div
-        class="d-flex flex-column align-items-center rounded px-5 py-4"
+        class="d-flex flex-column align-items-center rounded px-5 py-4 shadow"
         style="background-color: rgb(0, 97, 158, 0.2)"
       >
         <img src="../assets/l6.svg" />

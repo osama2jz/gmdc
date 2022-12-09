@@ -5,7 +5,7 @@
         :autoplay="2000"
         :items-to-show="1"
         :wrap-around="true"
-        style="min-height: 200px; max-height: 500px"
+        style="min-height: 200px; max-height: 500px; width: 100vw"
       >
         <slide v-for="slide in items" :key="slide.src">
           <img
@@ -41,7 +41,10 @@
         ></div>
       </div>
     </div>
-    <div style="display: flex; margin: 0px 0px 10px 10px" class="abc">
+    <div
+      style="display: flex; margin: auto; width: 90%; margin-bottom: 30px"
+      class="abc"
+    >
       <div
         class="row d-flex gap-1 ml-4 p-3"
         style="border-right: 1px solid rgb(0, 0, 0, 0.3); width: 60%"

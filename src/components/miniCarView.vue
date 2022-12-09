@@ -1,6 +1,6 @@
 <template>
   <div
-    class="d-flex p-2 rounded justify-content-between align-items-center"
+    class="d-flex p-2 rounded justify-content-between align-items-center shadow"
     style="background-color: white; width: 500px"
   >
     <p class="font-bold ml-2">{{ title }}</p>

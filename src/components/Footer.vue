@@ -3,7 +3,8 @@
   <MDBFooter :text="['center', 'lg-start', 'muted']">
     <!-- Section: Social media -->
     <section
-      class="w-75 m-auto d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      style="border-bottom: 1px solid rgb(0, 75, 154, 0.5)"
+      class="w-75 m-auto d-flex justify-content-center justify-content-lg-between p-4"
     >
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">

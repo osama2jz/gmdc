@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
+// import Form from "../components/Form.vue";
 import Landing from "../views/Landing.vue";
 import Inventory from "../views/Inventory.vue";
 import ViewCar from "../views/ViewCar.vue";
 import ApplyOnline from "../views/ApplyOnline.vue";
-import ContactUs from "../views/ContactUs.vue";
 
 const routes = [
   {
@@ -29,7 +29,7 @@ const routes = [
   {
     path: "/contactus",
     name: "contactus",
-    component: ContactUs,
+    component: ApplyOnline,
   },
 ];
 

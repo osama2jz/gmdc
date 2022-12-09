@@ -1,14 +1,14 @@
 <template>
   <DummyVue>
-    <FormVue />
+    <Table />
   </DummyVue>
 </template>
 <script>
 import DummyVue from "../components/SideBar.vue";
-import FormVue from "../components/Form.vue";
+import Table from "../components/ViewVehicle.vue";
 export default {
   name: "DataTable",
-  components: { DummyVue, FormVue },
+  components: { DummyVue, Table },
 };
 </script>
 <style></style>
