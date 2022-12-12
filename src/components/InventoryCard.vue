@@ -101,6 +101,7 @@ export default {
   height: 400px;
   margin-bottom: 30px;
   transition: scale 0.2s;
+  margin: auto;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .card:hover {

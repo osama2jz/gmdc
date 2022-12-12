@@ -21,10 +21,11 @@
         <Button :title="'GO'" :primary="true" />
       </div>
     </div>
-    <div class="d-flex mt-4">
+    <div class="inven">
       <div class="filters">
         <h2 class="mb-2">Advanced Filters</h2>
         <DropDown
+          style="width: 80% !important"
           :title="'Make/Model'"
           :children="[
             'Honda',
@@ -105,8 +106,17 @@
         </div>
       </div>
       <div class="row px-2 d-flex m-auto mt-2">
-        <p style="color: gray; font-weight: bold; margin: 10px">Results: 120</p>
-        <div class="col">
+        <p
+          style="
+            color: gray;
+            font-weight: bold;
+            margin: 10px;
+            text-align: center;
+          "
+        >
+          Results: 120
+        </p>
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -121,7 +131,7 @@
             :awd="'AWD'"
           />
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -134,7 +144,7 @@
             :model="'2003'"
           />
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -147,8 +157,7 @@
             :model="'2003'"
           />
         </div>
-        <div class="w-100"></div>
-        <div class="col">
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -163,7 +172,7 @@
             :awd="'AWD'"
           />
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -176,7 +185,7 @@
             :model="'2003'"
           />
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <InventoryCard
             @click="$router.push('inventory/car')"
             :title="'Chevrolet Silverado 1500'"
@@ -212,10 +221,16 @@ export default {
   flex-direction: column;
   background-image: url("../assets/wall.webp");
   height: 300px;
+  width: 100vw;
+  text-align: center;
   background-position: center center;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.inven {
+  display: flex;
+  margin-top: 20px;
 }
 .search {
   display: flex;
@@ -227,8 +242,21 @@ export default {
   z-index: 5;
 }
 .filters {
-  width: 20%;
+  width: 35%;
   padding: 1%;
   border-right: 1px solid rgb(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 600px) {
+  .inven {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters {
+    width: 90%;
+    border: none;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  }
 }
 </style>

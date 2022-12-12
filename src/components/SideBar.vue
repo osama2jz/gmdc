@@ -17,7 +17,7 @@
       </a>
       <nav
         class="d-flex gap-4 align-items-center"
-        style="height: 100%; margin-left: 5%"
+        :class="showSidebar ? 'none' : 'mobile'"
       >
         <router-link to="/">
           <a class="item">
@@ -40,6 +40,9 @@
           </a>
         </router-link>
       </nav>
+      <a class="icon" @click="onClick">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <div>
       <slot></slot>
@@ -48,8 +51,22 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "SideBar",
+  setup() {
+    let showSidebar = ref(false);
+    const onClick = () => {
+      console.log(showSidebar.value);
+      if (showSidebar.value == false) showSidebar.value = true;
+      else showSidebar.value = false;
+    };
+    return {
+      showSidebar,
+      onClick,
+    };
+  },
 };
 </script>
 <style>
@@ -66,5 +83,26 @@ export default {
   background-color: rgb(0, 97, 158);
   color: white;
   border-radius: 5px;
+}
+.icon {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav .icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10;
+  }
+  .icon {
+    display: block;
+  }
+  .none {
+    display: none !important;
+  }
+  .mobile {
+    display: flex !important;
+    flex-direction: column;
+  }
 }
 </style>

@@ -81,4 +81,9 @@ export default {
   font-weight: bold;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 95%;
+  }
+}
 </style>

@@ -1,10 +1,10 @@
 <template>
   <!-- Footer -->
-  <MDBFooter :text="['center', 'lg-start', 'muted']">
+  <MDBFooter :text="['center', 'lg-start', 'muted']" style="width: 90%">
     <!-- Section: Social media -->
     <section
       style="border-bottom: 1px solid rgb(0, 75, 154, 0.5)"
-      class="w-75 m-auto d-flex justify-content-center justify-content-lg-between p-4"
+      class="w-100 m-auto d-flex justify-content-center justify-content-lg-between p-4"
     >
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
@@ -13,23 +13,17 @@
       <!-- Left -->
       <!-- Right -->
       <div>
-        <a href="" class="me-4 text-reset">
+        <a href="https://www.facebook.com/carzlanellc/" class="me-4 text-reset">
           <i class="fa-brands fa-facebook fa-2xl"></i>
         </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa-brands fa-twitter fa-2xl"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
+        <a
+          href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x89b7e7494d4a5d3d:0xdad828ac2746ad2d?source=g.page.m.we._"
+          class="me-4 text-reset"
+        >
           <i class="fa-brands fa-google fa-2xl"></i>
         </a>
         <a href="" class="me-4 text-reset">
           <i class="fa-brands fa-instagram fa-2xl"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fa-brands fa-github fa-2xl"></i>
         </a>
       </div>
       <!-- Right -->

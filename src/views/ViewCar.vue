@@ -3,18 +3,14 @@
     <div>
       <carousel
         :autoplay="2000"
-        :items-to-show="1"
+        :items-to-show="3"
         :wrap-around="true"
         style="min-height: 200px; max-height: 500px; width: 100vw"
       >
         <slide v-for="slide in items" :key="slide.src">
           <img
             :src="slide.src"
-            style="
-              width: 100%;
-              height: 100%;
-              background-position: center center;
-            "
+            style="max-width: 90%; max-height: 100%; object-fit: scale-down"
           />
         </slide>
         <template #addons>
@@ -23,14 +19,14 @@
       </carousel>
     </div>
     <div
-      class="d-flex p-3 mx-3 my-2 justify-content-between my-4 rounded align-items-center"
-      style="width: 98%; background-color: rgb(0, 0, 0, 0.1)"
+      class="d-flex p-3 justify-content-between my-4 rounded align-items-center"
+      style="width: 100vw; background-color: rgb(0, 0, 0, 0.1)"
     >
-      <div>
+      <div class="mr-5">
         <h2>TOYOTA SUPRA Mk5 A90 white 2022</h2>
         <div
           class="mt-1 ml-1"
-          style="background-color: rgb(0, 97, 148); width: 200px; height: 5px"
+          style="background-color: rgb(0, 97, 148); width: 40%; height: 5px"
         ></div>
       </div>
       <div class="mr-4">
@@ -45,22 +41,19 @@
       style="display: flex; margin: auto; width: 90%; margin-bottom: 30px"
       class="abc"
     >
-      <div
-        class="row d-flex gap-1 ml-4 p-3"
-        style="border-right: 1px solid rgb(0, 0, 0, 0.3); width: 60%"
-      >
+      <div class="row d-flex gap-1 ml-4 py-3 specs">
         <h3>Vehicle Specifications</h3>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img
             src="../assets/vin.svg"
             style="width: 20px"
             class="mr-2"
           />897482974
         </h6>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img src="../assets/tire.svg" style="width: 20px" class="mr-2" />2005
         </h6>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img
             src="../assets/transmission.svg"
             style="width: 20px"
@@ -68,21 +61,21 @@
           />Automatic
         </h6>
         <div class="w-100"></div>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img
             src="../assets/meter.svg"
             style="width: 20px"
             class="mr-2"
           />2,300 miles
         </h6>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img
             src="../assets/location.svg"
             style="width: 20px"
             class="mr-2"
           />Islamabad
         </h6>
-        <h6 class="col d-flex mt-3">
+        <h6 class="col d-flex mt-3 align-items-center">
           <img src="../assets/fwd.svg" style="width: 20px" class="mr-2" />AWD
         </h6>
         <div
@@ -178,6 +171,10 @@ export default {
   background-color: white;
   z-index: 5;
 }
+.specs {
+  border-right: 1px solid rgb(0, 0, 0, 0.3);
+  width: 60%;
+}
 .cars {
   display: flex;
   gap: 5%;
@@ -200,10 +197,20 @@ h3 {
   font-size: 18px;
   font-weight: bold;
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .abc {
     display: flex;
     flex-direction: column;
+    margin-left: 0px !important;
+  }
+  .specs {
+    border: none;
+    width: 100vw;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    text-align: justify;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    margin-bottom: 20px;
   }
 }
 </style>

@@ -8,7 +8,6 @@
         font-size: 14px;
         color: gray;
         border-radius: 3px;
-        width: 270px;
         border: 1px solid #e8e8e8;
         padding: 10px;
         text-align: center;
@@ -40,4 +39,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.dropdown {
+  width: 100%;
+}
+</style>
