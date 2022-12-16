@@ -4,8 +4,9 @@
     <div>
       <carousel
         :autoplay="2000"
-        :items-to-show="2"
         :wrap-around="true"
+        :settings="settings"
+        :breakpoints="breakpoints"
         style="min-height: 200px; max-height: 500px; width: 100vw"
       >
         <slide v-for="slide in items" :key="slide.src">
@@ -40,7 +41,7 @@
     </div>
     <div
       style="display: flex; margin: auto; width: 90%; margin-bottom: 30px"
-      class="abc"
+      class="specss"
     >
       <div class="row d-flex gap-1 ml-4 py-3 specs">
         <h3>Vehicle Specifications</h3>
@@ -134,8 +135,23 @@ export default {
     Navigation,
     threeD,
   },
+
   data() {
     return {
+      settings: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
+      breakpoints: {
+        700: {
+          itemsToShow: 2,
+          snapAlign: "center",
+        },
+        1100: {
+          itemsToShow: 3,
+          snapAlign: "center",
+        },
+      },
       items: [
         {
           src: require("@/assets/s1.png"),
@@ -154,7 +170,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .main {
   display: flex;
   flex-direction: column;
@@ -201,7 +217,7 @@ h3 {
   font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
-  .abc {
+  .specss {
     display: flex;
     flex-direction: column;
     margin-left: 0px !important;

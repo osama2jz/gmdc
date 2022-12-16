@@ -16,7 +16,6 @@
       :scale="1"
     />
   </div>
-  <div>adasdasd</div>
 </template>
 <script>
 import { PanoViewer, SpinViewer } from "@egjs/vue3-view360";

@@ -43,15 +43,17 @@
         </router-link>
       </nav>
       <div>
-        <router-link to="/signin">
-          <a class="item">
-            <span>Sign In</span>
-          </a>
-        </router-link>
-        <div class="icon text-center">
-          <a @click="onClick">
-            <i class="fa fa-bars"></i>
-          </a>
+        <div class="d-flex align-items-center">
+          <router-link to="/signin">
+            <a class="item">
+              <span>Sign In</span>
+            </a>
+          </router-link>
+          <div class="icon text-center">
+            <a @click="onClick">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </div>
         <div
           v-if="showSidebar"

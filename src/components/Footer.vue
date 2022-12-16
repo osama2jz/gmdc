@@ -33,9 +33,9 @@
     <section class="d-flex">
       <MDBContainer class="text-center text-md-start mt-5" style="margin: auto">
         <!-- Grid row -->
-        <MDBRow class="mt-3 row" style="margin-left: 15%">
+        <MDBRow class="mt-3 row topp" style="margin-left: 15%">
           <!-- Grid column -->
-          <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4 col-5">
+          <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4 col-5 foot">
             <!-- Content -->
             <h6
               class="text-uppercase fw-bold mb-4 d-flex d-flex align-items-center"
@@ -108,4 +108,15 @@ export default {
   name: "FooterB",
 };
 </script>
-<style></style>
+<style scoped>
+@media only screen and (max-width: 600px) {
+  .foot {
+    width: 100% !important;
+    margin-left: 0px !important;
+    text-align: justify;
+  }
+  .topp {
+    margin-left: 5px !important;
+  }
+}
+</style>
