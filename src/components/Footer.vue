@@ -37,8 +37,11 @@
           <!-- Grid column -->
           <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4 col-5">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4 d-flex">
+            <h6
+              class="text-uppercase fw-bold mb-4 d-flex d-flex align-items-center"
+            >
               <img src="../assets/logo.svg" style="width: 50px" />
+              GMDC
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content.
@@ -91,7 +94,7 @@
     </section>
     <!-- Section: Links  -->
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05)">
       © 2022 Copyright:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GMDC</a>
     </div>

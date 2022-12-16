@@ -1,9 +1,10 @@
 <template>
   <DummyVue>
+    <threeD />
     <div>
       <carousel
         :autoplay="2000"
-        :items-to-show="3"
+        :items-to-show="2"
         :wrap-around="true"
         style="min-height: 200px; max-height: 500px; width: 100vw"
       >
@@ -118,6 +119,7 @@
 import DummyVue from "../components/SideBar.vue";
 import Footer from "../components/Footer.vue";
 import Button from "@/components/Button.vue";
+import threeD from "@/components/3d.vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
@@ -130,6 +132,7 @@ export default {
     Carousel,
     Slide,
     Navigation,
+    threeD,
   },
   data() {
     return {

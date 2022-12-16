@@ -1,30 +1,10 @@
 <template>
-  <button
-    v-if="icon"
-    class="btn float-right"
-    :style="styles"
-    style="
-      min-width: 150px;
-      font-weight: 100;
-      font-size: small;
-      text-transform: capitalize;
-    "
-  >
+  <button v-if="icon" class="btn float-right but" :style="styles">
     <img :src="require(`@/assets/${icon}.svg`)" class="mr-2" />
     {{ title }}
   </button>
 
-  <button
-    v-else
-    class="btn float-right"
-    :style="styles"
-    style="
-      min-width: 50px;
-      font-weight: 100;
-      font-size: small;
-      text-transform: capitalize;
-    "
-  >
+  <button v-else class="btn float-right but" :style="styles">
     {{ title }}
   </button>
 </template>
@@ -53,4 +33,15 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.but {
+  min-width: 150px;
+  font-weight: 100;
+  font-size: small;
+  text-transform: capitalize;
+}
+.but:hover {
+  color: white;
+  opacity: 0.9;
+}
+</style>
